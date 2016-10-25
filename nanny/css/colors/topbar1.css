@@ -1,0 +1,58 @@
+/* ----------------------------------------------------------------------
+	Topbar 1
+---------------------------------------------------------------------- */
+/* Topbar */
+#topbar {
+	color: #475766;
+	background: #eeeeee;
+	-webkit-box-shadow: 0px 1px 0px #eeeeee;
+	box-shadow: 0px 1px 0px #eeeeee;
+}
+.topbar-contact > li a { color: #475766; }
+.language > a {
+	color: #475766 !important;
+}
+/* topbar social */
+#topbar .social-icons > li a i {
+	border: 1px solid transparent;
+	color: #475766;
+	background: transparent;
+}
+#topbar .social-icons > li a i:hover {
+	border: 1px solid #475766;
+}
+
+
+
+/* Header Background 50 #eeeeee */
+@media (max-width: 767px) {
+#header { background: #eeeeee !important; }
+}
+@media (min-width: 768px) {
+.navbar-default:before { 
+	background: #eeeeee !important; 
+}
+.navbar-default:after {
+	border-top: 52px solid #eeeeee;
+	border-right: 20px solid transparent;
+	border-bottom: 52px solid transparent;
+	border-left: 20px solid #eeeeee;
+	-webkit-box-shadow: -2px 0px 0px #eeeeee;
+	box-shadow: -2px 0px 0px #eeeeee;
+}
+.navbar-default:after {
+	border-top-color: #eeeeee !important;
+	border-left-color: #eeeeee !important;
+}
+.sticky-header .navbar-default:after {
+	border-top: 48px solid #eeeeee;
+	border-right: 18px solid transparent;
+	border-bottom: 48px solid transparent;
+	border-left: 18px solid #eeeeee;
+}
+.sticky-header .navbar-default:after {
+	border-top-color: #eeeeee !important;
+	border-left-color: #eeeeee !important;
+}
+}
+
