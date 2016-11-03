@@ -39,29 +39,7 @@
   
   <!-- Top Bar
 ================================================== -->
-<div id="topbar">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-11">
-          
-          <!-- end .topbar-contact --> 
-        </div>
-        <!-- end .col-md-8 -->
-        
-        <div class="col-md-1">
-              <ul class="topbar-contact">
-                <li><a href="#">Login</a></li>
-              </ul>
-          <!-- end .social-icons --> 
-          
-        </div>
-        <!-- end .col-md-4 --> 
-      </div>
-      <!-- end .row --> 
-    </div>
-    <!-- end .container --> 
-  </div>
-  <!-- end #topbar --> 
+
   
   <!-- Header
 ================================================== -->
@@ -93,7 +71,13 @@
               </ul>
             </li>
             <li class="dropdown"><a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown">FIND NOW</a></li>
-            <li class="dropdown"><a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown">REGISTER NOW</a></li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown">REGISTRATION <i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="#l">Families Users</a></li>
+                <li><a href="#">Helper/Chef/Nanny Users</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown">LOGIN</a></li>
             
           </ul>
           <!-- end .nav navbar-nav --> 
@@ -112,26 +96,7 @@
   
   <!-- Page Title
 ================================================== -->
-  <div class="pagetitle">
-    <div class="pagetitle-overlay">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            
-            <ul class="breadcrumb">
-              <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
-              <li class="active"><i class="fa fa-file-text"></i>Customer Registration</li>
-            </ul>
-          </div>
-          <!-- end .col-md-12 --> 
-        </div>
-        <!-- end .row --> 
-      </div>
-      <!-- end .container --> 
-    </div>
-    <!-- end .pagetitle-overlay --> 
-  </div>
-  <!-- end .pagetitle -->
+  
   <div class="mb-20"></div>
   <!-- end .mb-100 --> 
   
@@ -169,21 +134,14 @@
               </div>
               <!-- end .col-md-6 -->
               <div class="col-md-6">
-                <label>Password:</label>
-                <input type="Password" class="form-control" placeholder="Phone number">
+                <label>Password: (min 8 Characters)</label>
+                <input type="Password" class="form-control" placeholder="********">
               </div>
               <!-- end .col-md-6 --> 
             </div>
             <!-- end .row -->
             
-            <div class="row">
-              <div class="col-md-12">
-                <label>Company Name:</label>
-                <input type="text" class="form-control" placeholder="Company Name">
-              </div>
-              <!-- end .col-md-12 --> 
-            </div>
-            <!-- end .row -->
+            
             
             <div class="row">
               <div class="col-md-12">
@@ -196,15 +154,12 @@
             <!-- end .row -->
             
             <div class="row">
-              <div class="col-md-12">
+              <div class="col-md-6">
                 <label>City / Town:</label>
                 <input type="text" class="form-control" placeholder="City / Town">
               </div>
               <!-- end .col-md-12 --> 
-            </div>
-            <!-- end .row -->
             
-            <div class="row">
               <div class="col-md-6">
                 <label>State:</label>
                 <input type="text" class="form-control" placeholder="State">
@@ -215,10 +170,7 @@
                 <input type="text" class="form-control" placeholder="Postalcode / ZIP">
               </div>
               <!-- end .col-md-6 --> 
-            </div>
-            <!-- end .row -->
             
-            <div class="row">
               
               <div class="col-md-6">
                 <label>Phone:</label>
@@ -228,6 +180,9 @@
             </div>
             <!-- end .row -->
             
+            <div class="row">
+            <div class="col-md-12" style="text-align: center;"><button type="button" class="btn btn-lg btn-theme"><span><i class="fa fa-chevron-right"></i></span>Register Now</button></div>
+            </div>
           </form>
           <div class="mb-50"></div>
           <!-- end .mb-50 --> 

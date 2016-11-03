@@ -37,35 +37,11 @@
 <body>
 <div id="boxed-layout"> 
   
-  <!-- Top Bar
-================================================== -->
-<div id="topbar">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-11">
-          
-          <!-- end .topbar-contact --> 
-        </div>
-        <!-- end .col-md-8 -->
-        
-        <div class="col-md-1">
-              <ul class="topbar-contact">
-                <li><a href="#">Login</a></li>
-              </ul>
-          <!-- end .social-icons --> 
-          
-        </div>
-        <!-- end .col-md-4 --> 
-      </div>
-      <!-- end .row --> 
-    </div>
-    <!-- end .container --> 
-  </div>
-  <!-- end #topbar --> 
+ 
   
   <!-- Header
 ================================================== -->
-  <header id="header">
+    <header id="header">
     <nav class="navbar yamm navbar-default navbar-static-top">
       <div class="container">
         <div class="navbar-header">
@@ -93,7 +69,13 @@
               </ul>
             </li>
             <li class="dropdown"><a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown">FIND NOW</a></li>
-            <li class="dropdown"><a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown">REGISTER NOW</a></li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown">REGISTRATION <i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="#l">Families Users</a></li>
+                <li><a href="#">Helper/Chef/Nanny Users</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown">LOGIN</a></li>
             
           </ul>
           <!-- end .nav navbar-nav --> 
@@ -109,7 +91,7 @@
   <!-- end #header -->
   <div class="clearfix"></div>
   <!-- end .clearfix --> 
-  
+  <div class="mb-5"></div>
   <!-- Page Title
 ================================================== -->
   <div class="map">
@@ -128,7 +110,7 @@
         <div class="row">
         <div class="col-md-2"></div>
           <div class="col-md-4">
-           <input id="cname" class="form-control" name="name" type="text" placeholder="Enter Your Location Postelcode" required>
+           <input id="cname" class="form-control" name="name" type="text" placeholder="Enter Your Location Name / Postelcode" required>
           </div>
           <!-- end .col-md-9 -->
 
@@ -137,7 +119,7 @@
                 <select class="form-control">
               <option value="">View All</option>
               <option value="">Helper</option>
-              <option value="">Chef</option>
+              <option value="">Nanny</option>
               <option value="">Families</option>
             </select>
               
@@ -181,8 +163,9 @@
             <div class="photobox1-content">
               <h4>James Charles</h4>
 
-              <button type="button" class="btn btn-xs btn-purple">Helper</button>&nbsp;<button type="button" class="btn btn-xs btn-aqua">Chef</button>&nbsp;<button type="button" class="btn btn-xs btn-orange">Families</button>
-              <div class="product-name"><p>Sembawang, Singapore</p></div>
+              <button type="button" class="btn btn-xs btn-purple">Helper</button>&nbsp;<button type="button" class="btn btn-xs btn-aqua">Nanny</button>&nbsp;<button type="button" class="btn btn-xs btn-orange">Chef</button>
+              <div class="product-name"><p>Age:34, Male, Sembawang, Singapore</p></div>
+              <p class="star-color"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i> 4/5</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo...</p>
               <p><a href="#" class="btn btn-sm btn-theme"><span><i class="fa fa-chevron-right"></i></span>Read More</a></p>
 
@@ -203,7 +186,8 @@
             </figure>
             <div class="photobox1-content">
               <h4>James Charles</h4><button type="button" class="btn btn-xs btn-purple">Helper</button>
-              <div class="product-name"><p>Sembawang, Singapore</p></div>
+              <div class="product-name"><p>Age:34, Male, Sembawang, Singapore</p></div>
+              <p class="star-color"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i> 4/5</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo...</p>
               <p><a href="#" class="btn btn-sm btn-theme"><span><i class="fa fa-chevron-right"></i></span>Read More</a></p>
 
@@ -226,7 +210,8 @@
             </figure>
             <div class="photobox1-content">
               <h4>James Charles</h4><button type="button" class="btn btn-xs btn-purple">Helper</button>
-              <div class="product-name"><p>Sembawang, Singapore</p></div>
+              <div class="product-name"><p>Age:34, Male, Sembawang, Singapore</p></div>
+              <p class="star-color"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i> 4/5</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo...</p>
               <p><a href="#" class="btn btn-sm btn-theme"><span><i class="fa fa-chevron-right"></i></span>Read More</a></p>
 
@@ -246,8 +231,9 @@
               </figcaption>
             </figure>
             <div class="photobox1-content">
-              <h4>James Charles</h4><button type="button" class="btn btn-xs btn-purple">Purple</button>
-              <div class="product-name"><p>Sembawang, Singapore</p></div>
+              <h4>James Charles</h4><button type="button" class="btn btn-xs btn-purple">Helper</button>
+              <div class="product-name"><p>Age:34, Male, Sembawang, Singapore</p></div>
+              <p class="star-color"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i> 4/5</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo...</p>
               <p><a href="#" class="btn btn-sm btn-theme"><span><i class="fa fa-chevron-right"></i></span>Read More</a></p>
 
@@ -268,8 +254,9 @@
               </figcaption>
             </figure>
             <div class="photobox1-content">
-              <h4>James Charles</h4><button type="button" class="btn btn-xs btn-purple">Helper</button>&nbsp;<button type="button" class="btn btn-xs btn-aqua">Chef</button>&nbsp;<button type="button" class="btn btn-xs btn-orange">Families</button>
-              <div class="product-name"><p>Sembawang, Singapore</p></div>
+              <h4>James Charles</h4><button type="button" class="btn btn-xs btn-purple">Helper</button>&nbsp;<button type="button" class="btn btn-xs btn-aqua">Nanny</button>&nbsp;<button type="button" class="btn btn-xs btn-orange">Chef</button>
+              <div class="product-name"><p>Age:34, Male, Sembawang, Singapore</p></div>
+              <p class="star-color"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i> 4/5</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo...</p>
               <p><a href="#" class="btn btn-sm btn-theme"><span><i class="fa fa-chevron-right"></i></span>Read More</a></p>
 
@@ -289,8 +276,9 @@
               </figcaption>
             </figure>
             <div class="photobox1-content">
-              <h4>James Charles</h4><button type="button" class="btn btn-xs btn-aqua">Chef</button>
-              <div class="product-name"><p>Sembawang, Singapore</p></div>
+              <h4>James Charles</h4><button type="button" class="btn btn-xs btn-aqua">Nanny</button>
+              <div class="product-name"><p>Age:34, Male, Sembawang, Singapore</p></div>
+              <p class="star-color"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i> 4/5</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo...</p>
               <p><a href="#" class="btn btn-sm btn-theme"><span><i class="fa fa-chevron-right"></i></span>Read More</a></p>
 
@@ -312,8 +300,9 @@
               </figcaption>
             </figure>
             <div class="photobox1-content">
-              <h4>James Charles</h4><button type="button" class="btn btn-xs btn-aqua">Chef</button>
-              <div class="product-name"><p>Sembawang, Singapore</p></div>
+              <h4>James Charles</h4><button type="button" class="btn btn-xs btn-aqua">Nanny</button>
+              <div class="product-name"><p>Age:34, Male, Sembawang, Singapore</p></div>
+              <p class="star-color"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i> 4/5</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo...</p>
               <p><a href="#" class="btn btn-sm btn-theme"><span><i class="fa fa-chevron-right"></i></span>Read More</a></p>
 
@@ -334,7 +323,8 @@
             </figure>
             <div class="photobox1-content">
               <h4>James Charles</h4><button type="button" class="btn btn-xs btn-purple">Helper</button>
-              <div class="product-name"><p>Sembawang, Singapore</p></div>
+              <div class="product-name"><p>Age:34, Male, Sembawang, Singapore</p></div>
+              <p class="star-color"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i> 4/5</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo...</p>
               <p><a href="#" class="btn btn-sm btn-theme"><span><i class="fa fa-chevron-right"></i></span>Read More</a></p>
 
@@ -354,8 +344,9 @@
               </figcaption>
             </figure>
             <div class="photobox1-content">
-              <h4>James Charles</h4><button type="button" class="btn btn-xs btn-aqua">Chef</button>&nbsp;<button type="button" class="btn btn-xs btn-aqua">Chef</button>&nbsp;<button type="button" class="btn btn-xs btn-orange">Families</button>
-              <div class="product-name"><p>Sembawang, Singapore</p></div>
+              <h4>James Charles</h4><button type="button" class="btn btn-xs btn-aqua">Nanny</button>&nbsp;<button type="button" class="btn btn-xs btn-aqua">Chef</button>&nbsp;<button type="button" class="btn btn-xs btn-orange">Families</button>
+              <div class="product-name"><p>Age:34, Male, Sembawang, Singapore</p></div>
+              <p class="star-color"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i> 4/5</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo...</p>
               <p><a href="#" class="btn btn-sm btn-theme"><span><i class="fa fa-chevron-right"></i></span>Read More</a></p>
 
@@ -375,8 +366,9 @@
               </figcaption>
             </figure>
             <div class="photobox1-content">
-              <h4>James Charles</h4><button type="button" class="btn btn-xs btn-aqua">Chef</button>
-              <div class="product-name"><p>Sembawang, Singapore</p></div>
+              <h4>James Charles</h4><button type="button" class="btn btn-xs btn-aqua">Nanny</button>
+              <div class="product-name"><p>Age:25, Female, Sembawang, Singapore</p></div>
+              <p class="star-color"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i> 4/5</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo...</p>
               <p><a href="#" class="btn btn-sm btn-theme"><span><i class="fa fa-chevron-right"></i></span>Read More</a></p>
 
@@ -398,8 +390,9 @@
               </figcaption>
             </figure>
             <div class="photobox1-content">
-              <h4>James Charles</h4><button type="button" class="btn btn-xs btn-orange">Families</button>
-              <div class="product-name"><p>Sembawang, Singapore</p></div>
+              <h4>James Charles</h4><button type="button" class="btn btn-xs btn-orange">Chef</button>
+              <div class="product-name"><p>Age:34, Male, Sembawang, Singapore</p></div>
+              <p class="star-color"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i> 4/5</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo...</p>
               <p><a href="#" class="btn btn-sm btn-theme"><span><i class="fa fa-chevron-right"></i></span>Read More</a></p>
 
@@ -419,8 +412,9 @@
               </figcaption>
             </figure>
             <div class="photobox1-content">
-              <h4>James Charles</h4><button type="button" class="btn btn-xs btn-orange">Families</button>
-              <div class="product-name"><p>Sembawang, Singapore</p></div>
+              <h4>James Charles</h4><button type="button" class="btn btn-xs btn-orange">Chef</button>
+              <div class="product-name"><p>Age:34, Male, Sembawang, Singapore</p></div>
+              <p class="star-color"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i> 4/5</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo...</p>
               <p><a href="#" class="btn btn-sm btn-theme"><span><i class="fa fa-chevron-right"></i></span>Read More</a></p>
 
@@ -441,7 +435,8 @@
             </figure>
             <div class="photobox1-content">
               <h4>James Charles</h4><button type="button" class="btn btn-xs btn-purple">Helper</button>&nbsp;<button type="button" class="btn btn-xs btn-aqua">Chef</button>&nbsp;<button type="button" class="btn btn-xs btn-orange">Families</button>
-              <div class="product-name"><p>Sembawang, Singapore</p></div>
+              <div class="product-name"><p>Age:34, Female, Sembawang, Singapore</p></div>
+              <p class="star-color"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i> 4/5</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo...</p>
               <p><a href="#" class="btn btn-sm btn-theme"><span><i class="fa fa-chevron-right"></i></span>Read More</a></p>
 
@@ -462,7 +457,8 @@
             </figure>
             <div class="photobox1-content">
               <h4>James Charles</h4><button type="button" class="btn btn-xs btn-purple">Helper</button>
-              <div class="product-name"><p>Sembawang, Singapore</p></div>
+              <div class="product-name"><p>Age:34, Male, Sembawang, Singapore</p></div>
+              <p class="star-color"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i> 4/5</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo...</p>
               <p><a href="#" class="btn btn-sm btn-theme"><span><i class="fa fa-chevron-right"></i></span>Read More</a></p>
 
@@ -485,7 +481,8 @@
             </figure>
             <div class="photobox1-content">
               <h4>James Charles</h4><button type="button" class="btn btn-xs btn-purple">Helper</button>
-              <div class="product-name"><p>Sembawang, Singapore</p></div>
+              <div class="product-name"><p>Age:34, Male, Sembawang, Singapore</p></div>
+              <p class="star-color"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i> 4/5</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo...</p>
               <p><a href="#" class="btn btn-sm btn-theme"><span><i class="fa fa-chevron-right"></i></span>Read More</a></p>
 
@@ -506,7 +503,8 @@
             </figure>
             <div class="photobox1-content">
               <h4>James Charles</h4><button type="button" class="btn btn-xs btn-aqua">Chef</button>
-              <div class="product-name"><p>Sembawang, Singapore</p></div>
+              <div class="product-name"><p>Age:34, Male, Sembawang, Singapore</p></div>
+              <p class="star-color"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i> 4/5</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo...</p>
               <p><a href="#" class="btn btn-sm btn-theme"><span><i class="fa fa-chevron-right"></i></span>Read More</a></p>
 

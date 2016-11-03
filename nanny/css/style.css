@@ -128,7 +128,7 @@ img.circle { border-radius: 50%; }
 	font-size: 14px;
 	line-height: 24px;
 	padding: 5px 10px;
-	height: 34px;
+	height: 45px;
 	background: #ffffff;
 	border: 1px solid #dddddd;
 	outline: none;
@@ -631,6 +631,8 @@ img.circle { border-radius: 50%; }
 	height: auto;
 	z-index: 300;
 	background: #ffffff;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 10px;
 }
 @media (max-width: 767px) {
 #header { background: #2d3640; }
@@ -776,8 +778,8 @@ img.circle { border-radius: 50%; }
 	margin: 0 auto;
 	width: 100%;
 	min-height: 100px;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 25px;
+	padding-bottom: 10px;
 	border: none;
 	background: #ff7d26;
 }
@@ -1779,7 +1781,7 @@ img.circle { border-radius: 50%; }
 	width: 80px;
 	height: 80px;
 }
-.product-name { width: 50%; }
+.product-name { width: 100%; }
 .product-name h4 { font-weight: bold; }
 .product-name p {
 	color: #888888;
