@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Families</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <!-- daterange picker -->
+  <link rel="stylesheet" href="../../plugins/daterangepicker/daterangepicker.css">
+  <!-- bootstrap datepicker -->
+  <link rel="stylesheet" href="../../plugins/datepicker/datepicker3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="../../plugins/datatables/dataTables.bootstrap.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="index2.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>MyBabyHelper</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>MyBabyHelper</span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- Messages: style can be found in dropdown.less-->
+          
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="../../dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">Admin</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                <p>
+                  Administrator
+                </p>
+              </li>
+              <!-- Menu Body -->
+              
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <!-- Control Sidebar Toggle Button -->
+        </ul>
+      </div>
+    </nav>
+  </header>
+   <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu">
+        <li class="header">MAIN NAVIGATION</li>
+        <li class="treeview">
+          <a href="../../index.html">
+            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+            <span class="pull-right-container">
+            </span>
+          </a>
+        </li>
+        
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-pie-chart"></i>
+            <span>Reports</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="../../pages/reports/families.html"><i class="fa fa-circle-o"></i> Families</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i>Helper/Nanny/Chef</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> My Transfer</a></li>
+            
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop"></i>
+            <span>CMS</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fa fa-circle-o"></i> Menus</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Banners</a></li>
+            <li><a href="../../pages/users-list/editor.html"><i class="fa fa-circle-o"></i> FAQ</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> About Us</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Terms & Conditions</a></li>
+            
+          </ul>
+        </li>
+        <li class="active treeview">
+          <a href="#">
+            <i class="fa fa-edit"></i> <span>Families</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="../../pages/families/families-list.html"><i class="fa fa-circle-o"></i> Families List</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Transactions</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Commission</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Pending Transactions</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Completed Transactions</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-table"></i> <span>Users List</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="../../pages/users-list/helper.html"><i class="fa fa-circle-o"></i> Helpers List</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Nanny List</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Chef List</a></li>
+          </ul>
+        </li>
+        
+        <li>
+          <a href="../../pages/mailbox/mailbox.html">
+            <i class="fa fa-envelope"></i> <span>Mailbox</span>
+            <span class="pull-right-container">
+              
+              <small class="label pull-right bg-red">5</small>
+            </span>
+          </a>
+        </li>
+
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-files-o"></i>
+            <span>Notifications</span>
+            <span class="pull-right-container">
+              <span class="label label-primary pull-right">15</span>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fa fa-circle-o"></i> Families</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Helper</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Nanny</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Chef</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        Families
+        <small>Transactions</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="#">Reports</a></li>
+        <li class="active">Families</li>
+      </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">Total Transactions</h3>
+            </div>
+            <!-- /.box-header -->
+
+            
+              <div class="box box-primary">
+            <div class="box-body">
+              <!-- Date -->
+              <div class="col-md-4 form-group">
+                <label>From Date:</label>
+
+                <div class="input-group date">
+                  <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                  </div>
+                  <input type="text" class="form-control pull-right" id="datepicker">
+                </div>
+                <!-- /.input group -->
+              </div>
+              <!-- /.form group -->
+
+              <div class="col-md-4 form-group">
+                <label>To Date:</label>
+
+                <div class="input-group date">
+                  <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                  </div>
+                  <input type="text" class="form-control pull-right" id="datepicker">
+                </div>
+                <!-- /.input group -->
+              </div>
+              <!-- /.form group -->
+
+              <div class="col-md-2 form-group">
+                <label></label>
+                <button type="button" class="btn btn-block btn-primary">FIND</button>
+                
+              </div>
+              <!-- /.form group -->
+
+
+
+
+
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+           
+
+            <div class="box-body">
+              <table id="example1" class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                  <th>Order No.</th>
+                  <th>Families Name</th>
+                  <th>Email ID</th>
+                  <th>Address</th>
+                  <th>Phone</th>
+                  <th>Edit</th>
+                  <th>Delete</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>MBHF0001</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr>
+                <tr>
+                  <td>MBHF0002</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr><tr>
+                  <td>MBHF0003</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr><tr>
+                  <td>MBHF0004</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr><tr>
+                  <td>MBHF0005</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr><tr>
+                  <td>MBHF0006</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr><tr>
+                  <td>MBHF0007</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr><tr>
+                  <td>MBHF0008</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr><tr>
+                  <td>MBHF0009</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr><tr>
+                  <td>MBHF00010</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr><tr>
+                  <td>MBHF00011</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr><tr>
+                  <td>MBHF00012</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr><tr>
+                  <td>MBHF00013</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr><tr>
+                  <td>MBHF00014</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr><tr>
+                  <td>MBHF00015</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr><tr>
+                  <td>MBHF00016</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr><tr>
+                  <td>MBHF00017</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr><tr>
+                  <td>MBHF00018</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr><tr>
+                  <td>MBHF00019</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr><tr>
+                  <td>MBHF00020</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr><tr>
+                  <td>MBHF00021</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr><tr>
+                  <td>MBHF00022</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr><tr>
+                  <td>MBHF00023</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr><tr>
+                  <td>MBHF00024</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr><tr>
+                  <td>MBHF00025</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr><tr>
+                  <td>MBHF00026</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr><tr>
+                  <td>MBHF00027</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr><tr>
+                  <td>MBHF00028</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr><tr>
+                  <td>MBHF00029</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr><tr>
+                  <td>MBHF00030</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr><tr>
+                  <td>MBHF00031</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr><tr>
+                  <td>MBHF00032</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr><tr>
+                  <td>MBHF00033</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr><tr>
+                  <td>MBHF00034</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr><tr>
+                  <td>MBHF00035</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr><tr>
+                  <td>MBHF00036</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr><tr>
+                  <td>MBHF00037</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr><tr>
+                  <td>MBHF00038</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr><tr>
+                  <td>MBHF00039</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr><tr>
+                  <td>MBHF00040</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr><tr>
+                  <td>MBHF00041</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr><tr>
+                  <td>MBHF00042</td>
+                  <td>James William</td>
+                  <td>testing@gmail.com</td>
+                  <td>Block-876, Woodlands Ring Road, S-098765</td>
+                  <td>9874 5632</td>
+                  <td><button type="button" class="btn btn-block btn-success">Edit</button></td>
+                  <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+                </tr>
+                
+                </tbody>
+                <tfoot>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                </tfoot>
+              </table>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    
+    <strong>Copyright &copy; 2016 <a href="#">MyBabyHelper</a>.</strong> All rights
+    reserved.
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Create the tabs -->
+    <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+      <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+      <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <!-- Home tab content -->
+      <div class="tab-pane" id="control-sidebar-home-tab">
+        <h3 class="control-sidebar-heading">Recent Activity</h3>
+        <ul class="control-sidebar-menu">
+          <li>
+            <a href="javascript:void(0)">
+              <i class="menu-icon fa fa-birthday-cake bg-red"></i>
+
+              <div class="menu-info">
+                <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
+
+                <p>Will be 23 on April 24th</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <i class="menu-icon fa fa-user bg-yellow"></i>
+
+              <div class="menu-info">
+                <h4 class="control-sidebar-subheading">Frodo Updated His Profile</h4>
+
+                <p>New phone +1(800)555-1234</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <i class="menu-icon fa fa-envelope-o bg-light-blue"></i>
+
+              <div class="menu-info">
+                <h4 class="control-sidebar-subheading">Nora Joined Mailing List</h4>
+
+                <p>nora@example.com</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <i class="menu-icon fa fa-file-code-o bg-green"></i>
+
+              <div class="menu-info">
+                <h4 class="control-sidebar-subheading">Cron Job 254 Executed</h4>
+
+                <p>Execution time 5 seconds</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <!-- /.control-sidebar-menu -->
+
+        <h3 class="control-sidebar-heading">Tasks Progress</h3>
+        <ul class="control-sidebar-menu">
+          <li>
+            <a href="javascript:void(0)">
+              <h4 class="control-sidebar-subheading">
+                Custom Template Design
+                <span class="label label-danger pull-right">70%</span>
+              </h4>
+
+              <div class="progress progress-xxs">
+                <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <h4 class="control-sidebar-subheading">
+                Update Resume
+                <span class="label label-success pull-right">95%</span>
+              </h4>
+
+              <div class="progress progress-xxs">
+                <div class="progress-bar progress-bar-success" style="width: 95%"></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <h4 class="control-sidebar-subheading">
+                Laravel Integration
+                <span class="label label-warning pull-right">50%</span>
+              </h4>
+
+              <div class="progress progress-xxs">
+                <div class="progress-bar progress-bar-warning" style="width: 50%"></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <h4 class="control-sidebar-subheading">
+                Back End Framework
+                <span class="label label-primary pull-right">68%</span>
+              </h4>
+
+              <div class="progress progress-xxs">
+                <div class="progress-bar progress-bar-primary" style="width: 68%"></div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <!-- /.control-sidebar-menu -->
+
+      </div>
+      <!-- /.tab-pane -->
+    
+  </aside>
+  <!-- /.control-sidebar -->
+  <!-- Add the sidebar's background. This div must be placed
+       immediately after the control sidebar -->
+  
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 2.2.3 -->
+<script src="../../plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<!-- DataTables -->
+<script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="../../plugins/datatables/dataTables.bootstrap.min.js"></script>
+<!-- SlimScroll -->
+<script src="../../plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="../../plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/app.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
+<!-- page script -->
+<script>
+  $(function () {
+    $("#example1").DataTable();
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false
+    });
+  });
+</script>
+</body>
+</html>
